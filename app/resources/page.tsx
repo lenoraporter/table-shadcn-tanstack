@@ -15,7 +15,7 @@ export default async function Page() {
   return (
     <section className="py-24">
       <div className="container">
-        <h1 className="text-3xl font-bold">All Resources</h1>
+        <h1 className="mb-6 text-3xl font-bold">All Resources</h1>
         <DataTable columns={columns} data={data} />
       </div>
     </section>
