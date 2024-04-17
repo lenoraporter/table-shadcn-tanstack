@@ -25,5 +25,10 @@ export const columns: ColumnDef<Resource>[] = [
   {
     accessorKey: "createdAt",
     header: "Created",
+    cell: ({ row }) => {
+      const date = new Date(row.getValue('createdAt'))
+      const formatted = date.toLocaleDateString()
+      return <div className='font-medium'>{formatted}</div>
+    }
   },
 ]
